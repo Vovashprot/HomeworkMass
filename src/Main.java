@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
     public static void task1(){
         System.out.println("Task1");
@@ -71,6 +72,24 @@ public class Main {
             System.out.print(mass3[i]+", ");
         }
         System.out.println();
+
+    }
+    public static void task4(){
+        System.out.println("Task4");
+        int[] mass = new int[3];
+        mass[0] = 1;
+        mass[1] = 2;
+        mass[2] = 3;
+
+        for (int i = 0; i <=2; i++){
+            if (mass[i]%2 != 0) {
+                mass[i]++;
+            }
+        }
+        for (int i=0; i<=2;i++){
+            System.out.println(mass[i]);
+        }
+
 
     }
 }
